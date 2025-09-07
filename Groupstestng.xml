@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="SmokeTC"></include>
+<include name="FunctionalTC"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="HybridApproach.GroupsSignUp"/>
+      <class name="HybridApproach.GroupsLogin"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
